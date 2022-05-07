@@ -1,0 +1,33 @@
+.primary-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+  background-color: #42c4fc;
+}
+
+.primary-header__heading {
+  font-size: 1.625rem;
+  text-transform: uppercase;
+}
+
+.primary-header__subheading {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.primary-navigation {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 30px;
+}
+
+.primary-navigation__link {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+}
