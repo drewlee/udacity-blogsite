@@ -112,6 +112,7 @@
     </footer>
     <script>
       (function() {
+        // Prevent browser form submission
         const formEl = document.getElementById('subscribe-form');
         if (formEl) {
           formEl.addEventListener('submit', (evt) => evt.preventDefault());

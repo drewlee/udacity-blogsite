@@ -111,5 +111,14 @@
     <footer class="primary-footer">
       <p class="primary-footer__copyright">&copy; Andrew A Lee 2022</p>
     </footer>
+    <script>
+      (function() {
+        // Prevent browser form submission
+        const formEl = document.getElementById('subscribe-form');
+        if (formEl) {
+          formEl.addEventListener('submit', (evt) => evt.preventDefault());
+        }
+      }());
+    </script>
   </body>
 </html>
