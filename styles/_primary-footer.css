@@ -1,16 +1,13 @@
 .primary-footer {
   background-color: #000000;
-  height: 100px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: auto;
 }
 
 .primary-footer__copyright {
-  color: #fff;
+  color: var(--color-secondary);
   font-size: 1rem;
-}
-
-.primary-footer__copyright::after {
-  content: " | andrew@andrewleeart.com";
 }

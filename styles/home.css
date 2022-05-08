@@ -1,0 +1,124 @@
+@import "./_base.css";
+@import "./_main.css";
+@import "./_primary-header.css";
+@import "./_primary-footer.css";
+
+.main-content__grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: 200px;
+  row-gap: 60px;
+  column-gap: 20px;
+  padding: 80px 30px;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.article-card__heading {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.article-card__date,
+.article-card__content,
+.article-card__link {
+  font-size: 1rem;
+}
+
+.article-card__date {
+  margin: 10px 0;
+  color: var(--color-muted);
+}
+
+.article-card__image {
+  display: block;
+  float: left;
+  margin: 3px 20px 0 0;
+}
+
+.article-card__link {
+  margin-top: auto;
+}
+
+.supplementary-info {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 150px 100px;
+  align-items: center;
+  background-color: var(--color-accent);
+  border-top: 1px solid rgb(154, 154, 154);
+  padding: 20px;
+}
+
+.bio-card {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.bio-card__image {
+  border: 1px solid var(--color-secondary);
+}
+
+.bio-card__heading,
+.subscribe-content__heading {
+  margin-bottom: 8px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.subscribe-content__form {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.subscribe-content__label,
+.subscribe-content__input,
+.subscribe-content__submit {
+  font-size: .875rem;
+  font-weight: normal;
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+.subscribe-content__input {
+  width: 180px;
+  padding: 3px 5px;
+  border: 1px solid var(--color-primary);
+  border-radius: 0;
+}
+
+.subscribe-content__submit {
+  padding: 4px 5px;
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
+  background-color: var(--color-secondary);
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .main-content__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+  .main-content__grid {
+    padding: 80px 200px;
+  }
+
+  .supplementary-info {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .subscribe-content {
+    justify-self: end;
+  }
+}

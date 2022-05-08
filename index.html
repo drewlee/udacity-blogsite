@@ -1,57 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <meta name="author" content="Andrew A. Lee"/>
-    <link rel="stylesheet" href="styles/main.css"/>
+    <meta charset="utf-8" />
+    <meta name="author" content="Andrew A. Lee" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/home.css" />
     <title>Andrew Lee's Blog</title>
   </head>
+
   <body>
     <header class="primary-header">
       <h1 class="primary-header__heading">Andrew Lee's Blog</h1>
-      <h2 class="primary-header__subheading">The paradoxal musings of a contrarian.</h2>
+      <h2 class="primary-header__subheading">The paradoxal musings of a subtle contrarian.</h2>
 
       <nav class="primary-navigation">
         <a class="primary-navigation__link" href="index.html">Home</a>
-        <a class="primary-navigation__link" href="#">Subscribe</a>
-        <a class="primary-navigation__link" href="#">Search</a>
+        <a class="primary-navigation__link" href="#">Contact</a>
+        <button class="primary-navigation__action" type="button">Search <img src="images/magnifying-glass.svg" width="16" height="16" alt="" /></button>
       </nav>
     </header>
 
     <main class="main-content">
-      <div class="main-content__grid">
+      <section class="main-content__grid">
         <article class="article-card">
           <h3 class="article-card__heading">Example Blog Post</h3>
           <time class="article-card__date">November 12, 2021</time>
-          <p class="article-card__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <a class="article-card__link" href="#">Read more</a>
+          <div class="article-card__post">
+            <p class="article-card__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <a class="article-card__link link-custom-underline" href="post.html">Read more ➔</a>
         </article>
 
         <article class="article-card">
           <h3 class="article-card__heading">Post Title</h3>
           <time class="article-card__date">November 12, 2021</time>
-          <p class="article-card__content">Foo.</p>
-          <a class="article-card__link" href="#">Read more</a>
+          <div class="article-card__post">
+            <p class="article-card__content">Foo.</p>
+          </div>
+          <a class="article-card__link link-custom-underline" href="post.html">Read more ➔</a>
         </article>
 
         <article class="article-card">
           <h3 class="article-card__heading">Another Example Post</h3>
           <time class="article-card__date">November 12, 2021</time>
-          <p class="article-card__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <a class="article-card__link" href="#">Read more</a>
+          <div class="article-card__post"></div>
+            <p class="article-card__content">Foo bar.</p>
+          </div>
+          <a class="article-card__link link-custom-underline" href="post.html">Read more ➔</a>
         </article>
 
         <article class="article-card">
           <h3 class="article-card__heading">Another Post Title</h3>
           <time class="article-card__date">November 12, 2021</time>
-          <p class="article-card__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <a class="article-card__link" href="#">Read more</a>
+          <div class="article-card__post">
+            <p class="article-card__content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <a class="article-card__link link-custom-underline" href="post.html">Read more ➔</a>
         </article>
-      </div>
+
+        <article class="article-card">
+          <h3 class="article-card__heading">Post With Image</h3>
+          <time class="article-card__date">November 12, 2021</time>
+          <div class="article-card__post">
+            <img class="article-card__image" src="images/sf-fog.jpg" width="80" height="80" alt="San Francisco fog" />
+            <p class="article-card__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <a class="article-card__link link-custom-underline" href="post.html">Read more ➔</a>
+        </article>
+
+        <article class="article-card">
+          <h3 class="article-card__heading">Another Post With Image</h3>
+          <time class="article-card__date">November 12, 2021</time>
+          <div class="article-card__post">
+            <img class="article-card__image" src="images/lighthouse.jpg" width="80" height="80" alt="Lighthouse" />
+            <p class="article-card__content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <a class="article-card__link link-custom-underline" href="post.html">Read more ➔</a>
+        </article>
+      </section>
+
+      <aside class="supplementary-info">
+        <div class="bio-card">
+          <img class="bio-card__image" src="images/profile-image.jpg" width="100" height="100" alt="Andrew Lee's profile" />
+          <div class="bio-card__container">
+            <h3 class="bio-card__heading">About</h3>
+            <p class="bio-card__content">
+              I consider things using a thoughtfull and thorough process. Although sometimes I get angry,
+              I try not to let too many issues get me down. As I always say, in the long run, consider the big picture and
+              don't sweat the details.
+            </p>
+          </div>
+        </div>
+        <div class="subscribe-content">
+          <h3 class="subscribe-content__heading">Get Notification Updates</h3>
+          <form class="subscribe-content__form" id="subscribe-form">
+            <label class="subscribe-content__label" for="subscribe-email">Email:</label>
+            <input class="subscribe-content__input" id="subscribe-email" type="text" placeholder="name@domain.com" />
+            <button class="subscribe-content__submit" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </aside>
     </main>
 
     <footer class="primary-footer">
-      <p class="primary-footer__copyright">&copy; Andrew A. Lee 2022</p>
+      <p class="primary-footer__copyright">&copy; Andrew A Lee 2022 | andrew@andrewleeart.com</p>
     </footer>
+    <script>
+      (function() {
+        const formEl = document.getElementById('subscribe-form');
+        if (formEl) {
+          formEl.addEventListener('submit', (evt) => evt.preventDefault());
+        }
+      }());
+    </script>
   </body>
 </html>

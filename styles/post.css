@@ -1,0 +1,123 @@
+@import "./_base.css";
+@import "./_main.css";
+@import "./_primary-header.css";
+@import "./_primary-footer.css";
+
+.main-content__grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
+  column-gap: 20px;
+  padding: 80px 30px;
+}
+
+.post__heading {
+  font-size: 1.375rem;
+  text-transform: uppercase;
+}
+
+.post__subheading {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.post__date,
+.post__text {
+  margin: 25px 0;
+  font-size: 1rem;
+}
+
+.post__text a {
+  text-decoration: underline;
+}
+
+.post__date {
+  margin-top: 6px;
+  display: block;
+  color: var(--color-muted);
+}
+
+.post__pagination {
+  display: flex;
+}
+
+.post__prev-link,
+.post__next-link {
+  font-size: 1rem;
+}
+
+.post__next-link {
+  margin-left: auto;
+}
+
+.post__figure {
+  margin: 25px 0;
+}
+
+.post__figure-img {
+  width: 100%;
+}
+
+.post__figcaption {
+  font-style: italic;
+}
+
+.side-rail__quote-container {
+  margin-top: 30px;
+  padding: 20px 16px;
+  background-color: var(--color-accent);
+  font-size: .875rem;
+  text-align: center;
+}
+
+.side-rail__quote {
+  font-style: italic;
+}
+
+.side-rail__quote-author {
+  margin-top: 10px;
+}
+
+.side-rail__nav {
+  margin-top: 30px;
+}
+
+.side-rail__item {
+  margin: 4px 0;
+}
+
+.side-rail__link {
+  font-size: .875rem;
+  text-decoration: underline;
+}
+
+.side-rail__heading {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.icon-arrow {
+  display: inline-block;
+  transform: rotateY(180deg);
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .main-content__grid {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .side-rail__quote-container {
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+  .main-content__grid {
+    padding: 80px 200px;
+  }
+}
